@@ -1,6 +1,6 @@
 import './Style/Courses.modules.scss';
 
-import { HeaderCourse } from '../../Components/Header/HeaderCourse/HeaderCourse';
+import { HeaderCourse } from '../../Components/Header/HeaderCourse';
 import { Footer } from '../../Components/Footer/Footer';
 import { Scroll } from '../../Components/ScrollTop/Scroll';
 

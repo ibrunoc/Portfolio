@@ -16,18 +16,6 @@
     margin: 50px auto; 
   }
 
-  .frontEnd, .backEnd, .others{ 
-    width: 55%;
-    background-color: #020b16;
-    height: auto;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .others{ padding-bottom: 0px; }
-
   .buttonSkills{
     position: relative;
     background: linear-gradient(0deg, rgba(78,104,249,1) 0%, rgba(120,215,221,1) 100%);
@@ -99,14 +87,25 @@
   .hamburgerBack.active .barSkills:nth-child(2),
   .hamburgerO.active .barSkills:nth-child(2){ transform: translateY(-10px) rotate(-45deg); }
 
+  .frontEnd, .backEnd, .others{ 
+    width: 55%;
+    background-color: #020b16;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-  .icon-skills{ 
+  .others{ padding-bottom: 0px; }
+
+  .icon{ 
     color: var(--subtitle-color); 
 
     &:hover { color: var(--red-color); }
   }
   
-  .icon{
+  .icon-skills{
     width: 15%;   
     height: auto;
     padding: 20px 0px;
@@ -136,11 +135,8 @@
 /*===========================
        RESPONSIVE CSS 
 ===========================*/
-@media screen and (max-width: 1068px) {
-  .circular{ width: 250px; }
 
-  .icon{ display: block; }
-}
+@media screen and (max-width: 1068px) { .icon{ display: block; } }
 
 @media screen and (max-width: 768px) {
   .service{     
@@ -158,25 +154,11 @@
 
   .skills{ width: 90%; }
 
-  .circular-container { width: 90%;}
-
-  .circular{ width: 45%; }
-  
   .buttonSkills { width: 90%;}
+
+  .frontEnd, .backEnd, .others{ width: 90%;}  
 }
 
-@media screen and (max-width: 563px) {   
-  .icon{ width: 50%; }
+@media screen and (max-width: 563px) { .icon{ width: 30%;  } }
 
-  .circular{ width: 85%; }
-}
-
-@media screen and (max-width: 290px) {
-  .skills{ width: 98%; }
-
-  .circular-container {
-    width: 180px;
-    margin-left: -21px;
-    margin: auto;
-  }
-}
+@media screen and (max-width: 290px) { .skills{ width: 98%; } }

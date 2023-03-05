@@ -1,17 +1,12 @@
-import '../Style/Header.modules.scss';
-import React, { useContext, useEffect, useState } from 'react';
+import './Style/Header.modules.scss';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom";
 
-import logo from "../Images/logo.webp"; 
-
-import { BsFillSunFill, BsMoonFill } from "react-icons/bs"; 
+import logo from "./Images/logo.webp"; 
 
 import { Link } from "react-scroll";
-import { ThemeContext } from '../../../Common/Context/ThemeContext';
 
-export function HeaderCourse() {
-
-	const context = useContext(ThemeContext);		
+export function HeaderCourse() {	
 	
 	const [isActive, setIsActive] = useState(false);
 	  
@@ -36,7 +31,7 @@ export function HeaderCourse() {
 	return (
 		<>
 			<header className={`navigation ${scroll < 10 ? "" : "sticky"}`}> 
-				<div className='container-header'>
+				<section className='container-header'>
 					<figure className='container-logo'>
 						<NavLink to="/"><img alt='Logo' src={ logo } className={`logo ${scroll < 10 ? "" : "sticky"}`}></img></NavLink>
 					</figure>
@@ -48,7 +43,8 @@ export function HeaderCourse() {
 							<li><Link activeClass="select" spy={true} to="Contact"><NavLink to="">Contato</NavLink></Link></li>
 						</ul>
 					</nav>
-				</div>	
+				</section>	
+
 				<section className="mobile">
 					<nav className="navbar">
 						<ul className={`nav-menu ${isActive ? "active" : "nav-menu"}`}>

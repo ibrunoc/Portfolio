@@ -1,15 +1,15 @@
 import './Style/ProjectHome.modules.scss';
-import { NavLink } from "react-router-dom";
+import { useState } from 'react';
 
-import Blind from '../../Pages/Projects/Images/blind.webp';
-import Governo from '../../Pages/Projects/Images/governo.webp';
-import Hotel from '../../Pages/Projects/Images/hotel.webp';
-import Instagram from '../../Pages/Projects/Images/Instagram.webp';
-import Pizzaria from '../../Pages/Projects/Images/pizzaria.webp';
-import Placeup from '../../Pages/Projects/Images/placeup.webp';
-import Pokedex from '../../Pages/Projects/Images/pokedex.webp';
-import Todolist from '../../Pages/Projects/Images/todolist.webp';
-import Caoselheiro from '../../Pages/Projects/Images/caoselheiro.webp';
+import Blind from './Images/blind.webp';
+import Governo from './Images/governo.webp';
+import Hotel from './Images/hotel.webp';
+import Instagram from './Images/Instagram.webp';
+import Pizzaria from './Images/pizzaria.webp';
+import Placeup from './Images/placeup.webp';
+import Pokedex from './Images/pokedex.webp';
+import Todolist from './Images/todolist.webp';
+import Caoselheiro from './Images/caoselheiro.webp';
 
 import { AiOutlineHtml5, AiOutlineClose } from "react-icons/ai";
 import { DiPhotoshop } from "react-icons/di";
@@ -20,7 +20,6 @@ import { TbBrandCss3 } from "react-icons/tb";
 import { SiReact, SiStyledcomponents, SiAdobeillustrator } from "react-icons/si";
 
 import Modal from 'react-modal';
-import { useState } from 'react';
 
 Modal.setAppElement('#root');
 
@@ -242,278 +241,253 @@ export function ProjectHome() {
                 </main>  
             </div>                
 
-            <Modal className="modal" isOpen={modalIsOpenAni} style={customStyles} onRequestClose={closeModalAni}>
-            <button className='close' onClick={closeModalAni}><AiOutlineClose className='x' /></button>
-                <div className="project-image-modal">
-                    <div className='information-modal'>
-                        <a href="https://animal-space.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Hotel} alt="Hotel Animal Space" /></a>                                         
-                        <div>
-                            <a href="https://animal-space.vercel.app/" rel="noreferrer" target="_blank"><h2>Animal Space</h2></a>
-                            <p>Desenvolvimento Web</p>
-                            <p className='description-modal'>Um tema de projeto sortiado e feito no curso do Proa. Um hotel para animais, este projeto foi feito em grupo. Desenvolvemos o design do site pelo figma.  </p>                                        
-                            <h3 className='date-project-modal'>10 de Março de 2022</h3>
-                        </div>                                    
-                    </div>
-
-                    <div className='container-language-modal'>
-                        <div className='langueges-modal'>
-                            <h1>Liguagens utilizadas para criação: </h1>
-                            <AiOutlineHtml5 className='languages-project-modal' size={20} />
-                            <TbBrandCss3 className='languages-project-modal' size={20} />  
-                            <IoLogoJavascript className='languages-project-modal' size={20} />                                                                                    
-                            <DiPhotoshop className='languages-project-modal' size={20} />  
-                            <IoLogoFigma className='languages-project-modal' size={20} />  
-                        </div>
-                        <div className='container-btn-modal'>
-                            <a href="https://animal-space.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
-                            <a href="https://github.com/ibrunoc/Animal-Space" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
-                        </div>
+            <section>
+                <Modal className="modal" isOpen={modalIsOpenAni} style={customStyles} onRequestClose={closeModalAni}>
+                    <button className='close' onClick={closeModalAni}><AiOutlineClose className='x' /></button>
+                    <div className="project-image-modal">
+                        <div className='information-modal'>
+                            <a href="https://animal-space.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Hotel} alt="Hotel Animal Space" /></a>                                         
+                            <div>
+                                <a href="https://animal-space.vercel.app/" rel="noreferrer" target="_blank"><h2>Animal Space</h2></a>
+                                <p>Desenvolvimento Web</p>
+                                <p className='description-modal'>Um tema de projeto sortiado e feito no curso do Proa. Um hotel para animais, este projeto foi feito em grupo. Desenvolvemos o design do site pelo figma.  </p>                                        
+                                <h3 className='date-project-modal'>10 de Março de 2022</h3>
+                                <div className='langueges-modal'>
+                                    <h1>Linguagens utilizadas para criação: </h1>
+                                    <AiOutlineHtml5 className='languages-project-modal' size={20} />
+                                    <TbBrandCss3 className='languages-project-modal' size={20} />  
+                                    <IoLogoJavascript className='languages-project-modal' size={20} />                                                                                    
+                                    <DiPhotoshop className='languages-project-modal' size={20} />  
+                                    <IoLogoFigma className='languages-project-modal' size={20} />  
+                                </div>
+                                <div className='container-btn-modal'>
+                                    <a href="https://animal-space.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
+                                    <a href="https://github.com/ibrunoc/Animal-Space" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
+                                </div>
+                            </div>                                    
+                        </div>                            
                     </div>                                    
-                </div>                                    
-            </Modal>                                  
+                </Modal>                                  
                 
-            <Modal className="modal" isOpen={modalIsOpenGov} style={customStyles} onRequestClose={closeModalGsp}>
-            <button className='close' onClick={closeModalGsp}><AiOutlineClose className='x' /></button>
-                <div className="project-image-modal">
-                    <div className='information-modal'>
-                        <a href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Governo} alt="Governo de SP" /></a>                                         
-                        <div>
-                            <a href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank"><h2>Governo de SP</h2></a>
-                            <p>Desenvolvimento Web</p>
-                            <p className='description-modal'>Um projeto feito no Proa em grupo, escolher um site e recriar o site do zero e o design. O site que escolhemos para recriar o site do Governo de SP, já que o design não agradava.</p>                                        
-                            <h3 className='date-project-modal'>28 de Março de 2022</h3>
-                        </div>                                    
-                    </div>
-
-                    <div className='container-language-modal'>
-                        <div className='langueges-modal'>
-                            <h1>Liguagens utilizadas para criação: </h1>
-                            <AiOutlineHtml5 className='languages-project-modal' size={20} />
-                            <TbBrandCss3 className='languages-project-modal' size={20} />  
-                            <IoLogoJavascript className='languages-project-modal' size={20} />                                                                                    
-                            <DiPhotoshop className='languages-project-modal' size={20} />  
-                            <IoLogoFigma className='languages-project-modal' size={20} />  
-                        </div>
-                        <div className='container-btn-modal'>
-                            <a href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
-                            <a href="https://github.com/ibrunoc/Governo-de-SP" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
-                        </div>                       
+                <Modal className="modal" isOpen={modalIsOpenGov} style={customStyles} onRequestClose={closeModalGsp}>
+                    <button className='close' onClick={closeModalGsp}><AiOutlineClose className='x' /></button>
+                    <div className="project-image-modal">
+                        <div className='information-modal'>
+                            <a href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Governo} alt="Governo de SP" /></a>                                         
+                            <div>
+                                <a href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank"><h2>Governo de SP</h2></a>
+                                <p>Desenvolvimento Web</p>
+                                <p className='description-modal'>Um projeto feito no Proa em grupo, escolher um site e recriar o site do zero e o design. O site que escolhemos para recriar o site do Governo de SP, já que o design não agradava.</p>                                        
+                                <h3 className='date-project-modal'>28 de Março de 2022</h3>
+                                <div className='langueges-modal'>
+                                    <h1>Linguagens utilizadas para criação: </h1>
+                                    <AiOutlineHtml5 className='languages-project-modal' size={20} />
+                                    <TbBrandCss3 className='languages-project-modal' size={20} />  
+                                    <IoLogoJavascript className='languages-project-modal' size={20} />                                                                                    
+                                    <DiPhotoshop className='languages-project-modal' size={20} />  
+                                    <IoLogoFigma className='languages-project-modal' size={20} />  
+                                </div>
+                                <div className='container-btn-modal'>
+                                    <a href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
+                                    <a href="https://github.com/ibrunoc/Governo-de-SP" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
+                                </div>     
+                            </div>                                    
+                        </div>                                 
                     </div>                                    
-                </div>                                    
-            </Modal>  
+                </Modal>  
 
-            <Modal className="modal" isOpen={modalIsOpenPiz} style={customStyles} onRequestClose={closeModalPiz}>
-            <button className='close' onClick={closeModalPiz}><AiOutlineClose className='x' /></button>
-                <div className="project-image-modal">
-                    <div className='information-modal'>
-                        <a href="https://agua-na-boca.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Pizzaria} alt="Pizzaria Água na Boca" /></a>                                         
-                        <div>
-                            <a href="https://agua-na-boca.vercel.app/" rel="noreferrer" target="_blank"><h2>Água na Boca</h2></a>
-                            <p>Desenvolvimento Web</p>
-                            <p className='description-modal'>Uma landing page para uma pizzaria do meu bairro.</p>                                        
-                            <h3 className='date-project-modal'>4 de Abril de 2022</h3>
-                        </div>                                    
-                    </div>
-
-                    <div className='container-language-modal'>
-                        <div className='langueges-modal'>
-                            <h1>Liguagens utilizadas para criação: </h1>
-                            <AiOutlineHtml5 className='languages-project-modal' size={20} />
-                            <TbBrandCss3 className='languages-project-modal' size={20} />  
-                            <IoLogoJavascript className='languages-project-modal' size={20} />                                                                                    
-                            <DiPhotoshop className='languages-project-modal' size={20} />  
-                            <IoLogoFigma className='languages-project-modal' size={20} />  
-                        </div>
-                        <div className='container-btn-modal'>
-                            <a href="https://agua-na-boca.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
-                            <a href="https://github.com/ibrunoc/Agua-Na-Boca" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
-                        </div>
+                <Modal className="modal" isOpen={modalIsOpenPiz} style={customStyles} onRequestClose={closeModalPiz}>
+                    <button className='close' onClick={closeModalPiz}><AiOutlineClose className='x' /></button>
+                    <div className="project-image-modal">
+                        <div className='information-modal'>
+                            <a href="https://agua-na-boca.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Pizzaria} alt="Pizzaria Água na Boca" /></a>                                         
+                            <div>
+                                <a href="https://agua-na-boca.vercel.app/" rel="noreferrer" target="_blank"><h2>Água na Boca</h2></a>
+                                <p>Desenvolvimento Web</p>
+                                <p className='description-modal'>Uma landing page para uma pizzaria do meu bairro.</p>                                        
+                                <h3 className='date-project-modal'>4 de Abril de 2022</h3>
+                                <div className='langueges-modal'>
+                                <h1>Linguagens utilizadas para criação: </h1>
+                                    <AiOutlineHtml5 className='languages-project-modal' size={20} />
+                                    <TbBrandCss3 className='languages-project-modal' size={20} />  
+                                    <IoLogoJavascript className='languages-project-modal' size={20} />                                                                                    
+                                    <DiPhotoshop className='languages-project-modal' size={20} />  
+                                    <IoLogoFigma className='languages-project-modal' size={20} />  
+                                </div>
+                                <div className='container-btn-modal'>
+                                    <a href="https://agua-na-boca.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
+                                    <a href="https://github.com/ibrunoc/Agua-Na-Boca" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
+                                </div>
+                            </div>                                    
+                        </div>                                 
                     </div>                                    
-                </div>                                    
-            </Modal>                                  
-                
-            <Modal className="modal" isOpen={modalIsOpenPla} style={customStyles} onRequestClose={closeModalPla}>
-            <button className='close' onClick={closeModalPla}><AiOutlineClose className='x' /></button>
-                <div className="project-image-modal">
-                    <div className='information-modal'>
-                        <a href="https://place-up.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Placeup} alt="PlaceUP" /></a>                                         
-                        <div>
-                            <a href="https://place-up.vercel.app/" rel="noreferrer" target="_blank"><h2>PlaceUP</h2></a>
-                            <p>Desenvolvimento Web</p>
-                            <p className='description-modal'>Meu TCC feito no PROA, a PlaceUP  uma plataforma online que auxilia o comerciamente a precificar e expor seus produtos, e disponibiliza uma vitrine online para que os clientes possam reservar seus produtos favoritos sem sair de casa!</p>                                        
-                            <h3 className='date-project-modal'>30 de Junho de 2022</h3>
-                        </div>                                    
-                    </div>
-
-                    <div className='container-language-modal'>
-                        <div className='langueges-modal'>
-                            <h1>Liguagens utilizadas para criação: </h1>
-                            <SiReact className='languages-project-modal' size={20} />
-                            <SiStyledcomponents className='languages-project-modal' size={20} />  
-                            <IoLogoJavascript className='languages-project-modal' size={20} />     
-                            <FaJava className='languages-project-modal' size={20} />             
-                            <GrMysql className='languages-project-modal' size={20} />                                                                   
-                            <DiPhotoshop className='languages-project-modal' size={20} />  
-                            <SiAdobeillustrator className='languages-project-modal' size={20} /> 
-                            <IoLogoFigma className='languages-project-modal' size={20} /> 
-                            <FaGitAlt className='languages-project-modal' size={20} /> 
-                        </div>
-                        <div className='container-btn-modal'>
-                            <a href="https://place-up.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
-                            <a href="https://github.com/ibrunoc/PlaceUP" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
-                        </div>                       
+                </Modal>                                  
+                    
+                <Modal className="modal" isOpen={modalIsOpenPla} style={customStyles} onRequestClose={closeModalPla}>
+                    <button className='close' onClick={closeModalPla}><AiOutlineClose className='x' /></button>
+                    <div className="project-image-modal">
+                        <div className='information-modal'>
+                            <a href="https://place-up.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Placeup} alt="PlaceUP" /></a>                                         
+                            <div>
+                                <a href="https://place-up.vercel.app/" rel="noreferrer" target="_blank"><h2>PlaceUP</h2></a>
+                                <p>Desenvolvimento Web</p>
+                                <p className='description-modal'>Meu TCC feito no PROA, a PlaceUP  uma plataforma online que auxilia o comerciamente a precificar e expor seus produtos, e disponibiliza uma vitrine online para que os clientes possam reservar seus produtos favoritos sem sair de casa!</p>                                        
+                                <h3 className='date-project-modal'>30 de Junho de 2022</h3>
+                                <div className='langueges-modal'>
+                                    <h1>Linguagens utilizadas para criação: </h1>
+                                    <SiReact className='languages-project-modal' size={20} />
+                                    <SiStyledcomponents className='languages-project-modal' size={20} />  
+                                    <IoLogoJavascript className='languages-project-modal' size={20} />     
+                                    <FaJava className='languages-project-modal' size={20} />             
+                                    <GrMysql className='languages-project-modal' size={20} />                                                                   
+                                    <DiPhotoshop className='languages-project-modal' size={20} />  
+                                    <SiAdobeillustrator className='languages-project-modal' size={20} /> 
+                                    <IoLogoFigma className='languages-project-modal' size={20} /> 
+                                    <FaGitAlt className='languages-project-modal' size={20} /> 
+                                </div>
+                                <div className='container-btn-modal'>
+                                    <a href="https://place-up.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
+                                    <a href="https://github.com/ibrunoc/PlaceUP" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
+                                </div>                       
+                            </div>                                    
+                        </div>                                  
                     </div>                                    
-                </div>                                    
-            </Modal>              
+                </Modal>              
 
-            <Modal className="modal" isOpen={modalIsOpenIns} style={customStyles} onRequestClose={closeModalIns}>
-            <button className='close' onClick={closeModalIns}><AiOutlineClose className='x' /></button>
-                <div className="project-image-modal">
-                    <div className='information-modal'>
-                        <a href="https://clone-instagram-bc.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Instagram} alt="Instagram" /></a>                                         
-                        
-                        <div>
-                            <a href="https://clone-instagram-bc.vercel.app/" rel="noreferrer" target="_blank"><h2>Clone do Instagram</h2></a>
-                            <p>Desenvolvimento Web</p>
-                            <p className='description-modal'>Este foi o um desafio no curso do Proa a criar um clone do Instagram de Abril de 2022.</p>                                        
-                            <h3 className='date-project-modal'>29 de Abril de 2022</h3>
-                        </div>                                    
-                    </div>
-
-                    <div className='container-language-modal'>
-                        <div className='langueges-modal'>
-                            <h1>Liguagens utilizadas para criação: </h1>
-                            <SiReact className='languages-project-modal' size={20} />
-                            <TbBrandCss3 className='languages-project-modal' size={20} />  
-                            <IoLogoJavascript className='languages-project-modal' size={20} />  
-                            <FaGitAlt className='languages-project-modal' size={20} /> 
-                        </div>
-                        <div className='container-btn-modal'>
-                            <a href="https://clone-instagram-bc.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
-                            <a href="https://github.com/ibrunoc/Clone_Instagram" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
-                        </div>
+                <Modal className="modal" isOpen={modalIsOpenIns} style={customStyles} onRequestClose={closeModalIns}>
+                    <button className='close' onClick={closeModalIns}><AiOutlineClose className='x' /></button>
+                    <div className="project-image-modal">
+                        <div className='information-modal'>
+                            <a href="https://clone-instagram-bc.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Instagram} alt="Instagram" /></a>                                         
+                            
+                            <div>
+                                <a href="https://clone-instagram-bc.vercel.app/" rel="noreferrer" target="_blank"><h2>Clone do Instagram</h2></a>
+                                <p>Desenvolvimento Web</p>
+                                <p className='description-modal'>Este foi o um desafio no curso do Proa a criar um clone do Instagram de Abril de 2022.</p>                                        
+                                <h3 className='date-project-modal'>29 de Abril de 2022</h3>
+                                <div className='langueges-modal'>
+                                <h1>Linguagens utilizadas para criação: </h1>
+                                    <SiReact className='languages-project-modal' size={20} />
+                                    <TbBrandCss3 className='languages-project-modal' size={20} />  
+                                    <IoLogoJavascript className='languages-project-modal' size={20} />  
+                                    <FaGitAlt className='languages-project-modal' size={20} /> 
+                                </div>
+                                <div className='container-btn-modal'>
+                                    <a href="https://clone-instagram-bc.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
+                                    <a href="https://github.com/ibrunoc/Clone_Instagram" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
+                                </div>
+                            </div>                                    
+                        </div>                            
                     </div>                                    
-                </div>                                    
-            </Modal>                                  
-                
-            <Modal className="modal" isOpen={modalIsOpenTdl} style={customStyles} onRequestClose={closeModalTdl}>
-            <button className='close' onClick={closeModalTdl}><AiOutlineClose className='x' /></button>
-                <div className="project-image-modal">
-                    <div className='information-modal'>
-                        <a href="https://to-do-list-seven-mu.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Todolist} alt="ToDoList" /></a>                                         
-                        <div>
-                            <a href="https://to-do-list-seven-mu.vercel.app/" rel="noreferrer" target="_blank"><h2>ToDo List</h2></a>
-                            <p>Desenvolvimento Web</p>
-                            <p className='description-modal'>Esse é um ToDoList simples que eu criei apenas para treinar.</p>                                        
-                            <h3 className='date-project-modal'>21 de Julho de 2022</h3>
-                        </div>                                    
-                    </div>
-
-                    <div className='container-language-modal'>
-                        <div className='langueges-modal'>
-                            <h1>Liguagens utilizadas para criação: </h1>
-                            <AiOutlineHtml5 className='languages-project-modal' size={20} />
-                            <TbBrandCss3 className='languages-project-modal' size={20} />  
-                            <IoLogoJavascript className='languages-project-modal' size={20} />    
-                            <FaGitAlt className='languages-project-modal' size={20} />  
-                        </div>
-                        <div className='container-btn-modal'>
-                            <a href="https://to-do-list-seven-mu.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
-                            <a href="https://github.com/ibrunoc/ToDoList" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
-                        </div>                       
+                </Modal>                                  
+                    
+                <Modal className="modal" isOpen={modalIsOpenTdl} style={customStyles} onRequestClose={closeModalTdl}>
+                    <button className='close' onClick={closeModalTdl}><AiOutlineClose className='x' /></button>
+                    <div className="project-image-modal">
+                        <div className='information-modal'>
+                            <a href="https://to-do-list-seven-mu.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Todolist} alt="ToDoList" /></a>                                         
+                            <div>
+                                <a href="https://to-do-list-seven-mu.vercel.app/" rel="noreferrer" target="_blank"><h2>ToDo List</h2></a>
+                                <p>Desenvolvimento Web</p>
+                                <p className='description-modal'>Esse é um ToDoList simples que eu criei apenas para treinar.</p>                                        
+                                <h3 className='date-project-modal'>21 de Julho de 2022</h3>
+                                <div className='langueges-modal'>
+                                    <h1>Linguagens utilizadas para criação: </h1>
+                                    <AiOutlineHtml5 className='languages-project-modal' size={20} />
+                                    <TbBrandCss3 className='languages-project-modal' size={20} />  
+                                    <IoLogoJavascript className='languages-project-modal' size={20} />    
+                                    <FaGitAlt className='languages-project-modal' size={20} />  
+                                </div>
+                                <div className='container-btn-modal'>
+                                    <a href="https://to-do-list-seven-mu.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
+                                    <a href="https://github.com/ibrunoc/ToDoList" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
+                                </div>      
+                            </div>                                    
+                        </div>                                  
                     </div>                                    
-                </div>                                    
-            </Modal>  
+                </Modal>  
 
-            <Modal className="modal" isOpen={modalIsOpenPok} style={customStyles} onRequestClose={closeModalPok}>
-            <button className='close' onClick={closeModalPok}><AiOutlineClose className='x' /></button>
-                <div className="project-image-modal">
-                    <div className='information-modal'>
-                        <a href="https://pokedex-ihyperbr.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Pokedex} alt="Pokédex" /></a>                                         
-                        <div>
-                            <a href="https://pokedex-ihyperbr.vercel.app/" rel="noreferrer" target="_blank"><h2>Pokédex</h2></a>
-                            <p>Desenvolvimento Web</p>
-                            <p className='description-modal'>Esse é um projeto simples, onde eu criei uma pokedex com base no vídeo do Manual do Dev.</p>                                        
-                            <h3 className='date-project-modal'>4 de Agosto de 2022</h3>
-                        </div>                                    
-                    </div>
-
-                    <div className='container-language-modal'>
-                        <div className='langueges-modal'>
-                            <h1>Liguagens utilizadas para criação: </h1>
-                            <AiOutlineHtml5 className='languages-project-modal' size={20} />
-                            <TbBrandCss3 className='languages-project-modal' size={20} />  
-                            <IoLogoJavascript className='languages-project-modal' size={20} />    
-                            <FaGitAlt className='languages-project-modal' size={20} />  
-                        </div>
-                        <div className='container-btn-modal'>
-                            <a href="https://pokedex-ihyperbr.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
-                            <a href="https://github.com/ibrunoc/Pokedex" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
-                        </div>
+                <Modal className="modal" isOpen={modalIsOpenPok} style={customStyles} onRequestClose={closeModalPok}>
+                    <button className='close' onClick={closeModalPok}><AiOutlineClose className='x' /></button>
+                    <div className="project-image-modal">
+                        <div className='information-modal'>
+                            <a href="https://pokedex-ihyperbr.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Pokedex} alt="Pokédex" /></a>                                         
+                            <div>
+                                <a href="https://pokedex-ihyperbr.vercel.app/" rel="noreferrer" target="_blank"><h2>Pokédex</h2></a>
+                                <p>Desenvolvimento Web</p>
+                                <p className='description-modal'>Esse é um projeto simples, onde eu criei uma pokedex com base no vídeo do Manual do Dev.</p>                                        
+                                <h3 className='date-project-modal'>4 de Agosto de 2022</h3>
+                                <div className='langueges-modal'>
+                                    <h1>Linguagens utilizadas para criação: </h1>
+                                    <AiOutlineHtml5 className='languages-project-modal' size={20} />
+                                    <TbBrandCss3 className='languages-project-modal' size={20} />  
+                                    <IoLogoJavascript className='languages-project-modal' size={20} />    
+                                    <FaGitAlt className='languages-project-modal' size={20} />  
+                                </div>
+                                <div className='container-btn-modal'>
+                                    <a href="https://pokedex-ihyperbr.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
+                                    <a href="https://github.com/ibrunoc/Pokedex" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
+                                </div>
+                            </div>                                    
+                        </div>                                 
                     </div>                                    
-                </div>                                    
-            </Modal>                                  
-                
-            <Modal className="modal" isOpen={modalIsOpenBli} style={customStyles} onRequestClose={closeModalBli}>
-            <button className='close' onClick={closeModalBli}><AiOutlineClose className='x' /></button>
-                <div className="project-image-modal">
-                    <div className='information-modal'>
-                        <a href="https://blind-vision.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Blind} alt="Blind Vision" /></a>                                         
-                        <div>
-                            <a href="https://blind-vision.vercel.app/" rel="noreferrer" target="_blank"><h2>Blind Vision</h2></a>
-                            <p>Desenvolvimento Web</p>
-                            <p className='description-modal'>Esse foi um desafio feito no Proa onde era apenas criar uma ideia, e um site básico. A ideia seria um óculos para cego, onde o óculos teria um chip que analisaria ao redor do cego em torno de 5m, e criando uma imagem na cabeça dele sobre o lugar que ele está.</p>                                        
-                            <h3 className='date-project-modal'>5 de Junho de 2022</h3>
-                        </div>                                    
-                    </div>
-
-                    <div className='container-language-modal'>
-                        <div className='langueges-modal'>
-                            <h1>Liguagens utilizadas para criação: </h1>
-                            <SiReact className='languages-project-modal' size={20} />
-                            <SiStyledcomponents className='languages-project-modal' size={20} />  
-                            <IoLogoJavascript className='languages-project-modal' size={20} />  
-                            <IoLogoFigma className='languages-project-modal' size={20} /> 
-                            <FaGitAlt className='languages-project-modal' size={20} /> 
-                        </div>
-                        <div className='container-btn-modal'>
-                            <a href="https://blind-vision.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
-                            <a href="https://github.com/ibrunoc/blindVision" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
-                        </div>                       
+                </Modal>                                  
+                    
+                <Modal className="modal" isOpen={modalIsOpenBli} style={customStyles} onRequestClose={closeModalBli}>
+                    <button className='close' onClick={closeModalBli}><AiOutlineClose className='x' /></button>
+                    <div className="project-image-modal">
+                        <div className='information-modal'>
+                            <a href="https://blind-vision.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Blind} alt="Blind Vision" /></a>                                         
+                            <div>
+                                <a href="https://blind-vision.vercel.app/" rel="noreferrer" target="_blank"><h2>Blind Vision</h2></a>
+                                <p>Desenvolvimento Web</p>
+                                <p className='description-modal'>Esse foi um desafio feito no Proa onde era apenas criar uma ideia, e um site básico. A ideia seria um óculos para cego, onde o óculos teria um chip que analisaria ao redor do cego em torno de 5m, e criando uma imagem na cabeça dele sobre o lugar que ele está.</p>                                        
+                                <h3 className='date-project-modal'>5 de Junho de 2022</h3>
+                                <div className='langueges-modal'>
+                                    <h1>Linguagens utilizadas para criação: </h1>
+                                    <SiReact className='languages-project-modal' size={20} />
+                                    <SiStyledcomponents className='languages-project-modal' size={20} />  
+                                    <IoLogoJavascript className='languages-project-modal' size={20} />  
+                                    <IoLogoFigma className='languages-project-modal' size={20} /> 
+                                    <FaGitAlt className='languages-project-modal' size={20} /> 
+                                </div>
+                                <div className='container-btn-modal'>
+                                    <a href="https://blind-vision.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
+                                    <a href="https://github.com/ibrunoc/blindVision" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
+                                </div>           
+                            </div>                                    
+                        </div>                                 
                     </div>                                    
-                </div>                                    
-            </Modal>                                   
-                
-            <Modal className="modal" isOpen={modalIsOpenEco} style={customStyles} onRequestClose={closeModalEco}>
-            <button className='close' onClick={closeModalEco}><AiOutlineClose className='x' /></button>
-                <div className="project-image-modal">
-                    <div className='information-modal'>
-                        <a href="https://caoselheiro-ecoverse.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Caoselheiro} alt="Econverse Caoselheiro" /></a>                                         
-                        <div>
-                            <a href="https://caoselheiro-ecoverse.vercel.app/" rel="noreferrer" target="_blank"><h2>Econverse Caoselheiro </h2></a>
-                            <p>Desenvolvimento Web</p>
-                            <p className='description-modal'>Esse foi um desafio de um processo seletivo.</p>                                        
-                            <h3 className='date-project-modal'>22 de Novembro de 2022</h3>
+                </Modal>                                   
+                    
+                <Modal className="modal" isOpen={modalIsOpenEco} style={customStyles} onRequestClose={closeModalEco}>
+                    <button className='close' onClick={closeModalEco}><AiOutlineClose className='x' /></button>
+                    <div className="project-image-modal">
+                        <div className='information-modal'>
+                            <a href="https://caoselheiro-ecoverse.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Caoselheiro} alt="Econverse Caoselheiro" /></a>                                         
+                            <div>
+                                <a href="https://caoselheiro-ecoverse.vercel.app/" rel="noreferrer" target="_blank"><h2>Econverse Caoselheiro </h2></a>
+                                <p>Desenvolvimento Web</p>
+                                <p className='description-modal'>Esse foi um desafio de um processo seletivo.</p>                                        
+                                <h3 className='date-project-modal'>22 de Novembro de 2022</h3>
+                                <div className='langueges-modal'>
+                                    <h1>Linguagens utilizadas para criação: </h1>
+                                    <SiReact className='languages-project-modal' size={20} />
+                                    <SiStyledcomponents className='languages-project-modal' size={20} />  
+                                    <IoLogoJavascript className='languages-project-modal' size={20} />                                                                
+                                    <DiPhotoshop className='languages-project-modal' size={20} />  
+                                    <IoLogoFigma className='languages-project-modal' size={20} /> 
+                                    <FaGitAlt className='languages-project-modal' size={20} /> 
+                                </div>
+                                <div className='container-btn-modal'>
+                                    <a href="https://caoselheiro-ecoverse.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
+                                    <a href="https://github.com/ibrunoc/ecoverse-caoselheiro" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
+                                </div>               
+                            </div>                                    
                         </div>                                    
-                    </div>
-
-                    <div className='container-language-modal'>
-                        <div className='langueges-modal'>
-                            <h1>Liguagens utilizadas para criação: </h1>
-                            <SiReact className='languages-project-modal' size={20} />
-                            <SiStyledcomponents className='languages-project-modal' size={20} />  
-                            <IoLogoJavascript className='languages-project-modal' size={20} />                                                                
-                            <DiPhotoshop className='languages-project-modal' size={20} />  
-                            <IoLogoFigma className='languages-project-modal' size={20} /> 
-                            <FaGitAlt className='languages-project-modal' size={20} /> 
-                        </div>
-                        <div className='container-btn-modal'>
-                            <a href="https://caoselheiro-ecoverse.vercel.app/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>
-                            <a href="https://github.com/ibrunoc/ecoverse-caoselheiro" rel="noreferrer" target="_blank"><button className='main-btn'>Link do repositório</button></a>
-                        </div>                       
                     </div>                                    
-                </div>                                    
-            </Modal>             
+                </Modal> 
+            </section>            
         </>
     );
 }

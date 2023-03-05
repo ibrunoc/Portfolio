@@ -9,16 +9,13 @@
     border: 1px solid var(--bg-color);
     background-color: var(--subtitle-color);
     z-index: 999;
-}
-  
-.scroll-top:hover {
-  border: 1px solid var(--body-color);
-  background-color: var(--subtitle2-color);
+
+    &:hover { background-color: var(--red-color); }
 }
 
 .arrow{
   font-size: 40px;
   color: var(--bg-color);  
+  
+  &:hover{ color: var(--body-color); }
 }
-
-.arrow:hover{ color: var(--body-color); }

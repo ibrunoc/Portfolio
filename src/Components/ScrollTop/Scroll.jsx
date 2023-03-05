@@ -4,9 +4,10 @@ import React, { useEffect, useState } from "react";
 import { MdArrowUpward } from "react-icons/md";
 
 export const Scroll = () => {
-    const [isVisible, setIsVisible] = useState(false);
+  
+  const [isVisible, setIsVisible] = useState(false);
 
-    useEffect(() => {
+  useEffect(() => {
       const toggleVisibility = () =>
         window.pageYOffset > 500 ? setIsVisible(true) : setIsVisible(false);
 

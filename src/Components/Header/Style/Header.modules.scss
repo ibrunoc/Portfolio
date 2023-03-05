@@ -131,72 +131,6 @@ header nav{
     background-color: var(--subtitle-color);
 }
 
-.toggleArea.sticky{ top: 25%; }
-
-.toggleArea{
-    position: absolute;
-    right: 5%;
-    top: 29%;
-    display: flex;
-    z-index: 1031;
-}
-
-.sun{
-    width: 27px;
-    height: 27px;
-    margin: 2px 5px;
-    color: var(--subtitle-color);
-}
-
-.moon{
-    width: 23px;
-    height: 23px;
-    margin: 2px 5px;
-    color: var(--subtitle-color);
-}
-
-.toggle-control { display: none;  }
-
-input.toggle-control + label {
-    position: relative;
-    margin: 5px;
-    display: block;      
-    width: 40px;
-    height: 20px;
-    border-radius: 60px;
-    cursor: pointer;
-    outline: none;
-    user-select: none;
-}
-
-input.toggle-control + label::before, input.toggle-control + label::after {
-    display: block;
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    bottom: 1px;      
-    right: 1px;
-    content: '';
-    transition: all 0.4s;
-}		
-
-input.toggle-control + label::before {
-    background: var(--subtitle-color);
-    border-radius: 60px;      
-    border: 1px solid var(--body-color);
-}
-
-input.toggle-control + label::after {
-    width: 18px;
-    background: var(--subtitleInvert-color);
-    border-radius: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-input.toggle-control:checked + label::before { background: var(--subtitle-color); }
-
-input.toggle-control:checked + label::after { margin-left: 20px;}
-
 /*===========================
        RESPONSIVE CSS 
 ===========================*/
@@ -296,7 +230,4 @@ input.toggle-control:checked + label::after { margin-left: 20px;}
     .nav-item a:hover{color: var(--subtitle-color);}
 
     .select-mobile a{ color: var(--subtitle-color); }
-}
-
-@media screen and (max-width: 768px) {
 }

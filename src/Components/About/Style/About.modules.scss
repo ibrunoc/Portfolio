@@ -5,7 +5,6 @@
   padding-top: 120px;
   background-color: var(--bg-color);
   color: var(--body-color);  
-  text-align: left !important;
 }
 
 .about-zone .container{
@@ -20,7 +19,7 @@
   font-size: 18px;
   font-weight: 500;      
   font-family: "Gilroy-Bold";  
-  text-align: left;
+  text-align: center;
   color: var(--body-color);
 }
 
@@ -37,29 +36,19 @@
 
 .information-about{
   width: 100%;
-}
-
-.about-content ul {padding-top: 15px;}
-
-.about-content ul li {
-  width: 50%;
-  float: left;
-  margin: 10px 0px;
+  display: block;
+  margin: 20px auto;
 }
 
 .about-content .information-about .info-icon{
   font-size: 16px;
-  display: flex;
+  display: inline-flex;
 }
 
 .about-content .information-about .info-icon .aboutIcon{
-  color: var(--subtitle-color);  
-  text-align: left;
+  color: var(--subtitle-color);    
+  text-align: center;
   margin-top: 4px;
-}
-
-.about-content p {  
-  text-align: left;
 }
 
 .about-content .information-about p span {  

@@ -17,10 +17,7 @@ export default function Loading() {
 	return(
 		<div style={LoadingContainer}>
 			<section className='loadingContainer'>			
-				<MutatingDots   
-				color = "#78D7DD"
-				secondaryColor= '#fc4545'
-				/>
+				<MutatingDots color="#78D7DD" secondaryColor='#fc4545' />
 			</section>
 		</div>	
 	);

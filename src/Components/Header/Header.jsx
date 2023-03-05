@@ -1,18 +1,13 @@
 import './Style/Header.modules.scss';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom";
 
 import logo from "./Images/logo.webp"; 
 
-import { BsFillSunFill, BsMoonFill } from "react-icons/bs"; 
-
 import { Link } from "react-scroll";
-import { ThemeContext } from '../../Common/Context/ThemeContext';
 
 export function Header() {
 
-	const context = useContext(ThemeContext);		
-	
 	const [isActive, setIsActive] = useState(false);
 	  
 	const handleClick = () => {
@@ -50,7 +45,7 @@ export function Header() {
 	return (
 	<>
 		<header style={{ background: backgroundColorScroll }} className={`navigation ${scroll < 50 ? "" : "sticky"}`}>  
-			<div className='container-header'>
+			<section className='container-header'>
 				<figure className='container-logo'>
 					<img alt='Logo' src={ logo } className={`logo ${scroll < 10 ? "" : "sticky"}`}></img>
 				</figure>
@@ -65,7 +60,7 @@ export function Header() {
 						<li><Link activeClass="select" spy={true} to="Contact"><NavLink to="">Contato</NavLink></Link></li>
 					</ul>
 				</nav>
-			</div>
+			</section>
 				
 			<section className="mobile">
 				<nav className="navbar">

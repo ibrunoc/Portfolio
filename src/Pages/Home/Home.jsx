@@ -10,7 +10,7 @@ import { Curriculum } from '../../Components/Curriculum/Curriculum';
 import { Footer } from '../../Components/Footer/Footer';
 import { Scroll } from '../../Components/ScrollTop/Scroll';
 
-import { BsGithub, BsLinkedin } from "react-icons/bs"; 
+import { BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs"; 
 import { MdArrowDownward } from "react-icons/md";
 
 import perfil  from './Images/perfil.webp';
@@ -54,6 +54,7 @@ export function Home() {
                                         <div className="cover-social-icon">        
                                             <ul>
                                                 <li><a target="_blank" without rel="noreferrer" href="https://github.com/ibrunoc/"><BsGithub className='github-cover'/></a></li>
+                                                <li><a target="_blank" without rel="noreferrer" href="https://www.instagram.com/bruno.costa.c/"><BsInstagram className='linkedin-cover' /></a></li>
                                                 <li><a target="_blank" without rel="noreferrer" href="https://www.linkedin.com/in/brunocostac/"><BsLinkedin className='linkedin-cover' /></a></li>
                                                 <li><div className='line-social' /></li>
                                             </ul> 
