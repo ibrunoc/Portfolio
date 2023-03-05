@@ -206,24 +206,26 @@
 }
 
 .scroll-down {
-  height: 43px;
+  height: 70px;
   position: absolute;
   bottom: 0;
   z-index: 99;
-  bottom: 100px;
+  bottom: 120px;
   left: 49%;
-  border-radius: 50%;    
-  background-color: var(--subtitle-color);
+  display: flex;
+  align-items: center;
+  border-radius: 25px;    
+  border: 2px solid var(--body-color);
+  z-index: 999;
 }
-
-.scroll-down:hover { background-color: var(--red-color); }
 
 .arrow-down{
-  font-size: 43px;
-  color: var(--bg-color);  
+  font-size: 40px;
+  color: var(--subtitle-color);
+
+  &:hover{ color: var(--red-color); }
 }
 
-.arrow-down:hover{ color: var(--body-color); }
 
 /*===========================
        RESPONSIVE CSS 

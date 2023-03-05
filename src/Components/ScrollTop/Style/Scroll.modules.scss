@@ -1,21 +1,20 @@
 @import url(../../../reset.scss);
 
 .scroll-top {
-    height: 43px;
+    height: 63px;
     position: fixed;
     bottom: 2em;
     right: 2em;
-    border-radius: 50%;    
-    border: 1px solid var(--bg-color);
-    background-color: var(--subtitle-color);
+    display: flex;
+    align-items: center;
+    border-radius: 25px;    
+    border: 2px solid var(--body-color);
     z-index: 999;
-
-    &:hover { background-color: var(--red-color); }
 }
 
 .arrow{
   font-size: 40px;
-  color: var(--bg-color);  
+  color: var(--subtitle-color);
   
-  &:hover{ color: var(--body-color); }
+  &:hover{ color: var(--red-color); }
 }

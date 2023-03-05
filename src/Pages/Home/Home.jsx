@@ -10,8 +10,7 @@ import { Curriculum } from '../../Components/Curriculum/Curriculum';
 import { Footer } from '../../Components/Footer/Footer';
 import { Scroll } from '../../Components/ScrollTop/Scroll';
 
-import { BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs"; 
-import { MdArrowDownward } from "react-icons/md";
+import { BsInstagram, BsGithub, BsLinkedin, BsArrowDown } from "react-icons/bs"; 
 
 import perfil  from './Images/perfil.webp';
 import backgroundCover  from './Images/backgroundCover.webp';
@@ -66,7 +65,7 @@ export function Home() {
 
                         <section className="scroll-down">
                             <a href="#About">
-                                <MdArrowDownward className='arrow-down' />    
+                                <BsArrowDown className='arrow-down' />    
                             </a>
                         </section>      
                     </main>      

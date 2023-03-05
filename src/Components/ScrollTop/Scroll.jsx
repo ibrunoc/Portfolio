@@ -1,7 +1,7 @@
 import './Style/Scroll.modules.scss';
 import React, { useEffect, useState } from "react";
 
-import { MdArrowUpward } from "react-icons/md";
+import { BsArrowUp } from "react-icons/bs";
 
 export const Scroll = () => {
   
@@ -18,7 +18,7 @@ export const Scroll = () => {
   return isVisible ? (
     <div className="scroll-top">
       <a href="#top">
-        <MdArrowUpward className='arrow' />
+        <BsArrowUp className='arrow' />
       </a>
     </div>
   ) : null;
