@@ -3,7 +3,7 @@ Olá, tudo bem?
 Este projeto é meu portfólio, desenvolvi ele com React.JS e com SaSS. 
 Bom nesse portfólio você pode conhecer um pouco melhor sobre mim, minhas skills, onde você pode conhecer um pouco sobre mim e os meus projetos e meios de contato!
 
-![Portfolio](https://user-images.githubusercontent.com/68878579/222619205-a041fb66-be4e-4d29-91f2-1efcc4a85975.png)
+![Portfolio](https://user-images.githubusercontent.com/68878579/222983211-ef01b50d-92b7-4e00-b609-091d00d2943e.png)
 
 # Getting Started with Create React App
 
