@@ -277,7 +277,10 @@
     justify-content: center;
   }
   
-  .cover-social .cover-social-icon {position: relative;}
+  .cover-social .cover-social-icon {
+    position: relative;
+    width: 100%;
+  }
   
   .cover-social .cover-social-icon::before {    
     position: absolute;
@@ -285,7 +288,7 @@
     width: 100%;
     height: 2px;
     background-color: var(--subtitle-color);
-    left: -84.5%;
+    left: -90.5%;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -367,12 +370,17 @@
 
   .cover-social {
     position: relative;
+    width: 100%;
     top: 20px;
+    left: -10.5%;
   }
 
-  .cover-social .cover-social-icon::before {  left: -62.5%;  }
+  .cover-social .cover-social-icon::before {  left: -82.5%;  }
   
-  .cover-social .cover-social-icon ul { max-width: 100%; }
+  .cover-social .cover-social-icon ul { 
+    max-width: 100%;     
+    display: inline-flex;
+  }
 
   .scroll-down { 
     left: 44%; 

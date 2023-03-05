@@ -100,7 +100,8 @@
   .others{ padding-bottom: 0px; }
 
   .icon{ 
-    color: var(--subtitle-color); 
+    color: var(--subtitle-color);
+    margin: auto;
 
     &:hover { color: var(--red-color); }
   }
@@ -159,6 +160,9 @@
   .frontEnd, .backEnd, .others{ width: 90%;}  
 }
 
-@media screen and (max-width: 563px) { .icon{ width: 30%;  } }
+@media screen and (max-width: 563px) { 
+  .icon-skills{ width: 30%; } 
+  .icon{ margin: auto; } 
+}
 
 @media screen and (max-width: 290px) { .skills{ width: 98%; } }
