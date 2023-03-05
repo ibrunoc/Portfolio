@@ -1,0 +1,93 @@
+@import url(../../../reset.scss);
+
+.about-zone{  
+  width: 100%;
+  padding-top: 120px;
+  background-color: var(--bg-color);
+  color: var(--body-color);  
+  text-align: left !important;
+}
+
+.about-zone .container{
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.about-content { margin: 60px auto auto auto; }
+
+.about-content .about-title {
+  font-size: 18px;
+  font-weight: 500;      
+  font-family: "Gilroy-Bold";  
+  text-align: left;
+  color: var(--body-color);
+}
+
+.about-content .about-title span{
+  color: var(--subtitle-color);
+  text-transform: uppercase;
+}
+
+.about-content .about { 
+  width: 100%; 
+  margin: 10px auto;
+  margin-top: -60px;
+}
+
+.information-about{
+  width: 100%;
+}
+
+.about-content ul {padding-top: 15px;}
+
+.about-content ul li {
+  width: 50%;
+  float: left;
+  margin: 10px 0px;
+}
+
+.about-content .information-about .info-icon{
+  font-size: 16px;
+  display: flex;
+}
+
+.about-content .information-about .info-icon .aboutIcon{
+  color: var(--subtitle-color);  
+  text-align: left;
+  margin-top: 4px;
+}
+
+.about-content p {  
+  text-align: left;
+}
+
+.about-content .information-about p span {  
+  color: var(--subtitle-color);
+  margin-left: 10px;
+}
+
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+
+@media (max-width: 767px) {
+  .about-content .about { 
+    width: 100%; 
+    margin: 20px auto;
+  }
+
+  .about-content { 
+    width: 90%; 
+    margin: auto;
+  }
+ 
+  .about-zone{  padding-bottom: 200px;  }
+
+  .information-about{ padding-left: 10px; }  
+ 
+  .about-content ul li {
+    width: 100%;
+    float: left;
+  }
+}

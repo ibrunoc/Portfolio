@@ -1,0 +1,182 @@
+  @import url(../../../reset.scss);
+
+  .skills-zone{ 
+    max-width: 1300px;
+    margin: auto;  
+    padding-top: 90px;
+    background-color: var(--bg-color);
+    clear: both;   
+  }
+
+  .skills-zone .section-title{ padding-bottom: 0px; }
+
+  .skills {  
+    width: 98%;
+    height: auto;
+    margin: 50px auto; 
+  }
+
+  .frontEnd, .backEnd, .others{ 
+    width: 55%;
+    background-color: #020b16;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .others{ padding-bottom: 0px; }
+
+  .buttonSkills{
+    position: relative;
+    background: linear-gradient(0deg, rgba(78,104,249,1) 0%, rgba(120,215,221,1) 100%);
+    width: 55%;
+    height: auto;
+    padding-bottom: 20px;
+    margin: auto;    
+    border-radius: 10px;    
+    text-align: center;
+  }
+  
+  .buttonSkills:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+  }
+
+  .buttonSkills h1{    
+    width: 90%;
+    color: var(--bg-color);   
+    text-align: left;    
+    margin: 0px auto;
+    font-size: 1.5rem;   
+    font-family: "Poppins";
+    padding-left: 2%;
+    padding-right: 10%;
+    font-weight: 600;
+  }
+
+  .hamburgerFront, .hamburgerBack, .hamburgerO {
+    width: 10%;
+    height: 100% !important;   
+    position: absolute;
+    right: 5%;
+    top: 90%;
+    transform: translateY(-50%);     
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    color: var(--body-color);
+  }
+
+  .hamburgerO{ top: 95%; }
+  
+  .barSkills{  
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: var(--bg-color);
+  }
+
+  .hamburgerFront .barSkills:nth-child(1),  
+  .hamburgerBack .barSkills:nth-child(1),
+  .hamburgerO .barSkills:nth-child(1){ transform: translateX(0px) rotate(0deg); }
+
+  .hamburgerFront .barSkills:nth-child(2),
+  .hamburgerBack .barSkills:nth-child(2),  
+  .hamburgerO .barSkills:nth-child(2){ transform: translateY(-10px) rotate(90deg); }
+
+  .hamburgerFront.active .barSkills:nth-child(1),
+  .hamburgerBack.active .barSkills:nth-child(1),
+  .hamburgerO.active .barSkills:nth-child(1){  transform: translateY(0px) rotate(45deg); }
+
+  .hamburgerFront.active .barSkills:nth-child(2),
+  .hamburgerBack.active .barSkills:nth-child(2),
+  .hamburgerO.active .barSkills:nth-child(2){ transform: translateY(-10px) rotate(-45deg); }
+
+
+  .icon-skills{ 
+    color: var(--subtitle-color); 
+
+    &:hover { color: var(--red-color); }
+  }
+  
+  .icon{
+    width: 15%;   
+    height: auto;
+    padding: 20px 0px;
+    margin: 20px 10px;
+    border-radius: 30px;
+    color: var(--body-color);
+
+    &:hover {
+      color: var(--red-color);
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
+    box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23); 
+  }  
+}
+
+  .icon h2{
+    font-size: 1rem;
+    margin: 10px auto auto auto;
+    color: var(--body-color);
+    
+    &:hover { color: var(--red-color); }
+  }
+  
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+@media screen and (max-width: 1068px) {
+  .circular{ width: 250px; }
+
+  .icon{ display: block; }
+}
+
+@media screen and (max-width: 768px) {
+  .service{     
+    margin-top: 20px;
+    padding: 25px 0px; 
+    height: 250px;
+  }
+
+  .service-container {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin: auto;
+  }  
+
+  .skills{ width: 90%; }
+
+  .circular-container { width: 90%;}
+
+  .circular{ width: 45%; }
+  
+  .buttonSkills { width: 90%;}
+}
+
+@media screen and (max-width: 563px) {   
+  .icon{ width: 50%; }
+
+  .circular{ width: 85%; }
+}
+
+@media screen and (max-width: 290px) {
+  .skills{ width: 98%; }
+
+  .circular-container {
+    width: 180px;
+    margin-left: -21px;
+    margin: auto;
+  }
+}
