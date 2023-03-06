@@ -1,0 +1,252 @@
+@import url(../../../reset.scss);
+
+.experience-zone{   
+  padding-top: 80px;
+  background-color: var(--bg-color);   
+}
+
+.experience-zone .container{
+  max-width: 1140px;
+  margin: auto;
+}
+
+.section-title{ padding-bottom: 70px; }
+
+.section-title .title {
+  font-weight: 700;  
+  font-size: 50px;
+  color: var(--body-color);
+  padding-top: 20px;
+}
+
+.experience{
+  width: 50%;
+  height: auto;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid var(--body-color);
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.background{  
+  width: 95%;
+  height: 350px;
+  position: absolute;
+  top: 400px;
+  left: 3%;
+  z-index: 1;
+  opacity: 0.3;
+  background-image: url("../Images/background.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 100%;
+}
+
+.info-company{
+  display: flex;
+  align-items: center;
+}
+
+.container-experience img{
+  width: 90px;
+  height: auto;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.container-experience h1{
+  color: var(--subtitle-color);
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 10px;
+  position: relative;
+
+  &:hover{ color: var(--red-color); }
+}
+
+.container-info-experience::before{  
+  content: "<info>";
+  position: absolute;
+  top: 35%;  
+  text-align: left;
+  color: var(--body-color);
+  left: 20px;
+}
+
+.info-experience::after{
+  content: '';
+  width: 0;
+  height: 25%;
+  position: absolute;
+  background-color: var(--body-color);
+  border: 0.1px solid var(--body-color);
+  bottom: 32%;
+  left: 40px;
+}
+
+.container-info-experience::after{  
+  content: "</info>";
+  position: absolute;
+  top: 68%;  
+  text-align: left;
+  color: var(--body-color);
+  left: 15px;
+  margin-bottom: 20px;
+}
+
+.container-experience h2{
+  color: var(--subtitle-color);
+  font-size: 1.6rem;
+  margin: 20px auto;
+  text-align: left;
+  padding-left: 50px;
+  
+  &:hover{ color: var(--red-color); }
+}
+
+.container-experience p{
+  color: var(--body-color);
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.container-experience p{
+  color: var(--body-color);
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.tags{
+  display: flex;
+  padding-top: 40px;
+  flex-wrap: wrap;
+}
+
+.tag{
+  height: auto;
+  background-color: var(--subtitle-color);
+  color: var(--bg-color);
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px 10px;
+
+  &:hover{
+    background-color: var(--red-color);
+    color: var(--body-color);
+  }
+}
+
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+@media (max-width: 1127px) {
+.container-info-experience::before{ top: 30%; }
+  
+  .info-experience::after{
+    height: 28%;
+    bottom: 35%;
+  }
+  
+  .container-info-experience::after{ top: 65%; }
+}
+
+@media (max-width: 767px) {
+  .section-title{  padding-bottom: 30px;  }
+
+  .experience-zone { padding-top: 70px; } 
+ 
+  .experience{
+    width: 80%;
+    display: block;
+  }
+  
+  .info-company{
+    display: block;
+    align-items: center;
+  }
+    
+  .experience h1{ text-align: center; }
+
+  .container-info-experience::before{ top: 40%; }
+    
+  .info-experience::after{
+    height: 28%;
+    bottom: 25%;
+  }
+  
+  .container-info-experience::after{ top: 75%; }
+}
+
+@media (max-width: 708px) {
+  .container-info-experience::before{ top: 33%; }
+  
+  .info-experience::after{
+    height: 25%;
+    bottom: 35%;
+  }
+  
+  .container-info-experience::after{ top: 68%; }
+}
+
+@media (max-width: 510px) {
+  .container-info-experience::before{ top: 33%; }
+  
+  .info-experience::after{
+    height: 30%;
+    bottom: 30%;
+  }
+  
+  .container-info-experience::after{ top: 73%; }
+}
+
+@media (max-width: 467px) {
+  .experience{  width: 90%;  }
+
+  .experience h1{
+    font-size: 1.5rem;
+    padding-left: 0px;
+  }
+
+  .container-info-experience::before{ top: 35%; }
+  
+  .info-experience::after{
+    height: 23%;
+    bottom: 35%;
+  }
+  
+  .container-info-experience::after{ top: 67%; }
+  
+  .experience h2{ font-size: 1.2rem; }
+  
+  .experience p{ font-size: 0.8rem; }
+}
+
+@media (max-width: 270px) {
+  .experience{  width: 90%;  }
+
+  .experience h1{
+    font-size: 1.5rem;
+    padding-left: 0px;
+  }
+
+  .container-info-experience::before{ display: none; }
+  
+  .info-experience::after{ display: none; }
+  
+  .container-info-experience::after{ display: none; }
+  
+  .experience h2{ 
+    font-size: 1.2rem; 
+    padding-left: 0px;
+  }
+  
+  .experience p{ 
+    font-size: 0.8rem;    
+    padding-left: 0px;
+  }
+}

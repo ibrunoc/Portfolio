@@ -4,6 +4,7 @@ import { Header } from '../../Components/Header/Header';
 import { Type } from "../../Components/Profession/Type";
 import { AboutMe } from '../../Components/About/AboutMe'; 
 import { Skills } from '../../Components/Skills/Skills'; 
+import { Experience } from '../../Components/Experience/Experience';
 import { CoursesHome } from '../../Components/CoursesHome/CoursesHome';
 import { ProjectHome } from '../../Components/ProjectHome/ProjectHome';
 import { Curriculum } from '../../Components/Curriculum/Curriculum';
@@ -71,6 +72,7 @@ export function Home() {
                     </main>      
                 <AboutMe />  
                 <Skills />  
+                <Experience />  
                 <CoursesHome /> 
                 <ProjectHome /> 
                 <Curriculum />   

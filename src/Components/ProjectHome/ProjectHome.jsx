@@ -80,7 +80,7 @@ export function ProjectHome() {
                 <main className="projects-home">
                     <section className="container">
                         <section className="section-title">
-                            <h2 className="title"><span>04.</span> Projetos</h2>
+                            <h2 className="title"><span>05.</span> Projetos</h2>
                             <hr /><p>Alguns dos projetos feito por mim, em grupo e individual.</p>   
                         </section> 
                         

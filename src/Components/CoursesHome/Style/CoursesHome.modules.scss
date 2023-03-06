@@ -1,6 +1,11 @@
 @import url(../../../reset.scss);
 
-.courses-zone-home{ padding-top: 90px;}
+.courses-zone-home{ 
+    padding-top: 90px;    
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+}
 
 .courses-zone hr{ 
     padding-top: -20px;

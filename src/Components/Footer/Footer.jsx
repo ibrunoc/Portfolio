@@ -10,7 +10,7 @@ export function Footer() {
             <footer className="contact-zone" data-aos="fade-up"> 
                 <section className="container">
                     <article className="section-title">
-                        <h2 className="title"><span>05.</span> Entre em contato</h2>
+                        <h2 className="title"><span>06.</span> Entre em contato</h2>
                         <hr />
                     </article> 
 
@@ -63,7 +63,7 @@ export function Footer() {
                             <p>Bruno C. Todos os direitos reservados || Copyright © 2023.</p>
                         </aside>
                     </article> 
-                    </section>                                
+                </section>                                
             </footer>   
         </>
     );

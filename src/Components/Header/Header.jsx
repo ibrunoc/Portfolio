@@ -55,6 +55,7 @@ export function Header() {
 						<li><Link activeClass="select" spy={true} to="Home"><NavLink to="">Inicio</NavLink></Link></li>
 						<li><Link activeClass="select" spy={true} to="About"><NavLink to="">Sobre</NavLink></Link></li>
 						<li><Link activeClass="select" spy={true} to="Skills"><NavLink to="">Skills</NavLink></Link></li>
+						<li><Link activeClass="select" spy={true} to="Experience"><NavLink to="">Experiência</NavLink></Link></li>
 						<li><Link activeClass="select" spy={true} to="Courses"><NavLink to="">Formação</NavLink></Link></li>
 						<li><Link activeClass="select" spy={true} to="Project"><NavLink to="">&lt;Projetos /&gt;</NavLink></Link></li>			
 						<li><Link activeClass="select" spy={true} to="Contact"><NavLink to="">Contato</NavLink></Link></li>
@@ -73,6 +74,9 @@ export function Header() {
 						</li>
 						<li className="nav-item">
 							<Link activeClass="select-mobile" spy={true} to="About"><NavLink to="">Sobre</NavLink></Link>
+						</li>					
+						<li className="nav-item">
+							<Link activeClass="select-mobile" spy={true} to="Experience"><NavLink to="/">Experiência</NavLink></Link>
 						</li>					
 						<li className="nav-item">
 							<Link activeClass="select-mobile" spy={true} to="Skills"><NavLink to="/">Skills</NavLink></Link>
