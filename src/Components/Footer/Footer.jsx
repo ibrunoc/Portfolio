@@ -1,7 +1,7 @@
 import './Style/Footer.modules.scss';
 
 import { TfiEmail } from "react-icons/tfi"; 
-import { BsInstagram, BsGithub, BsPhone, BsLinkedin } from "react-icons/bs"; 
+import { BsInstagram, BsGithub, BsPhone, BsLinkedin, BsBehance } from "react-icons/bs"; 
 import { SlLocationPin } from "react-icons/sl"; 
 
 export function Footer() { 
@@ -53,7 +53,8 @@ export function Footer() {
                             <ul>
                                 <li><a target="_blank" rel="noreferrer" href="https://github.com/ibrunoc/"><BsGithub className='github-footer'/></a></li>
                                 <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/bruno.costa.c/"><BsInstagram className='linkedin-footer' /></a></li>
-                                <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brunocostac/"><BsLinkedin className='linkedin-footer' /></a></li>
+                                <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brunocostac/"><BsLinkedin className='linkedin-footer' /></a></li> 
+                                <li><a target="_blank" rel="noreferrer" href="https://www.behance.net/ibrunoc"><BsLinkedin className='linkedin-footer' /></a></li>
                             </ul>
                         </aside>
                     </article>

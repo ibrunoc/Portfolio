@@ -10,9 +10,10 @@ import Placeup from './Images/placeup.webp';
 import Pokedex from './Images/pokedex.webp';
 import Todolist from './Images/todolist.webp';
 import Caoselheiro from './Images/caoselheiro.webp';
+import BabaKing from './Images/baba.webp';
 
 import { AiOutlineHtml5, AiOutlineClose } from "react-icons/ai";
-import { DiPhotoshop } from "react-icons/di";
+import { DiPhotoshop, DiPhp } from "react-icons/di";
 import { FaJava, FaGitAlt } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { IoLogoJavascript, IoLogoFigma } from "react-icons/io5";
@@ -46,6 +47,7 @@ export function ProjectHome() {
     const [modalIsOpenPok, setIsOpenPok] = useState(false);
     const [modalIsOpenBli, setIsOpenBli] = useState(false);
     const [modalIsOpenEco, setIsOpenEco] = useState(false);
+    const [modalIsOpenBab, setIsOpenBab] = useState(false);
   
      function openModalAni() {  setIsOpenAni(true); }  
     function closeModalAni() { setIsOpenAni(false); }
@@ -73,9 +75,13 @@ export function ProjectHome() {
 
     function openModalEco() {  setIsOpenEco(true); }  
     function closeModalEco() { setIsOpenEco(false); }
+    
+    function openModalBab() {  setIsOpenBab(true); }  
+    function closeModalBab() { setIsOpenBab(false); }
 
     return (
         <>    
+            <div className='background-swish-top-project' />  
             <div id="Project"> 
                 <main className="projects-home">
                     <section className="container">
@@ -232,6 +238,24 @@ export function ProjectHome() {
                                         <IoLogoFigma className='languages-project' size={20} /> 
                                         <FaGitAlt className='languages-project' size={20} /> 
                                         <h2>Caoselheiro</h2>
+                                        <p>-Desenvolvimento Web</p>
+                                    </figure>                                       
+                                </aside> 
+                            </article>  
+
+                            <article className="project-container"> 
+                                <aside className="project">
+                                    <figure className="project-image" onClick={openModalBab}>
+                                        <h3 className='date-project'>22 de Fevereiro de 2022</h3>
+                                        <img width={900} height={400} src={ BabaKing } alt="Caoselheiro" />
+                                        <SiReact className='languages-project' size={20} />
+                                        <SiStyledcomponents className='languages-project' size={20} />                                          
+                                        <DiPhp className='languages-project' size={20} /> 
+                                        <IoLogoJavascript className='languages-project' size={20} />                                                           
+                                        <DiPhotoshop className='languages-project' size={20} />  
+                                        <IoLogoFigma className='languages-project' size={20} /> 
+                                        <FaGitAlt className='languages-project' size={20} /> 
+                                        <h2>Bàbá King</h2>
                                         <p>-Desenvolvimento Web</p>
                                     </figure>                                       
                                 </aside> 
@@ -487,7 +511,36 @@ export function ProjectHome() {
                         </div>                                    
                     </div>                                    
                 </Modal> 
-            </section>            
+
+                <Modal className="modal" isOpen={modalIsOpenBab} style={customStyles} onRequestClose={closeModalBab}>
+                    <button className='close' onClick={closeModalBab}><AiOutlineClose className='x' /></button>
+                    <div className="project-image-modal">
+                        <div className='information-modal'>
+                            <a href="https://oduduwacursos.com.br/" rel="noreferrer" target="_blank"><img width={900} height={400} src={BabaKing} alt="Bàbá King" /></a>                                         
+                            <div>
+                                <a href="https://oduduwacursos.com.br/" rel="noreferrer" target="_blank"><h2>Bàbá King</h2></a>
+                                <p>Desenvolvimento Web</p>
+                                <p className='description-modal'>Site criado para o Sacerdote Bàbá King.</p>                                        
+                                <h3 className='date-project-modal'>22 de Fevereiro de 2022</h3>
+                                <div className='langueges-modal'>
+                                    <h1>Linguagens utilizadas para criação: </h1>
+                                    <SiReact className='languages-project-modal' size={20} />
+                                    <SiStyledcomponents className='languages-project-modal' size={20} />  
+                                    <IoLogoJavascript className='languages-project-modal' size={20} />    
+                                    <DiPhp className='languages-project-modal' size={20} />                                                              
+                                    <DiPhotoshop className='languages-project-modal' size={20} />  
+                                    <IoLogoFigma className='languages-project-modal' size={20} /> 
+                                    <FaGitAlt className='languages-project-modal' size={20} /> 
+                                </div>
+                                <div className='container-btn-modal'>
+                                    <a href="https://oduduwacursos.com.br/" rel="noreferrer" target="_blank"><button className='main-btn'>Link do projeto</button></a>                                    
+                                </div>               
+                            </div>                                    
+                        </div>                                    
+                    </div>                                    
+                </Modal> 
+            </section>    
+            <div className='background-swish-down-project' />          
         </>
     );
 }

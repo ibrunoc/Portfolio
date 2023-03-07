@@ -1,8 +1,8 @@
 @import url(../../../reset.scss);
 
 .cover-content {
-  height: 1010px;
   width: 100%;
+  height: 1010px;
   position: relative;    
   z-index: 1;
   overflow: hidden;
@@ -190,7 +190,7 @@
   margin-left: 25px;
 }
 
-.github-cover, .linkedin-cover{
+.github-cover, .linkedin-cover, .instagram-cover, .behance-cover{
   width: 55px;
   height: 32px;
   display: block;
@@ -236,9 +236,20 @@
 }
 
 @media screen and (max-width: 960px) { 
+  .cover-content {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .scroll-down { 
+    left: 47.5%;   
+    bottom: 20px;
+  }
+
   .info-cover{
     width: 100%;
     float: none;
+    margin-top: 300px;
     padding-left: 0%;
   }
 
@@ -250,13 +261,25 @@
   
   .cover-container-right .cover-btn { float: none; }
 
-  .profile-image { display: none;}
+  .profile-image { 
+    position: absolute;
+    width: 95%;
+    top: -8%;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width:767px) { 
+  .cover-content {
+    height: auto;
+    padding-bottom: 300px;
+  }
+
   .scroll-down { 
     left: 47.5%;   
-    bottom: 50px;
+    bottom: 20px;
   }
 
   .cover-social {
@@ -299,7 +322,7 @@
     transform: translateY(-50%); 
   }
   
-  .github-cover, .linkedin-cover{
+  .github-cover, .linkedin-cover, .instagram-cover, .behance-cover{
     width: 45px;
     height: 22px;
     display: inline-block;
@@ -329,11 +352,10 @@
   
   .cover-social .cover-social-icon ul li a {
       color: var(--subtitle-color);
-      font-size: 31px;
+      font-size: 35px;
       line-height: 35px;
       border-radius: 50%;
       background-color: var(--bg-color);
-      border: 1px solid var(--subtitle-color);
       text-align: center; 
   }
   
@@ -346,7 +368,7 @@
   .line-social{display: none;}
 }
 
-@media screen and (max-width: 467px) { 
+@media screen and (max-width: 499px) { 
   .info-cover{ padding-top: 300px; }
 
   .cover-container-right .sub-title-cover { font-size: 30px; }
@@ -373,7 +395,7 @@
   .cover-social {
     position: relative;
     width: 100%;
-    top: 20px;
+    top: -80px;
     left: -10.5%;
   }
 
@@ -383,6 +405,11 @@
     max-width: 100%;     
     display: inline-flex;
   }
+
+  .cover-social .cover-social-icon ul li {
+    display: inline-block;
+    margin-left: 0px; 
+}
 
   .scroll-down { 
     left: 44%; 

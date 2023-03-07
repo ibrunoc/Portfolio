@@ -1,10 +1,17 @@
   @import url(../../../reset.scss);
 
   .skills-zone{ 
+    background-color: var(--bgTwo-color);
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .skills-zone .container{ 
+    position: relative;
+    z-index: 1;    
     max-width: 1300px;
     margin: auto;  
     padding-top: 90px;
-    background-color: var(--bg-color);
     clear: both;   
   }
 

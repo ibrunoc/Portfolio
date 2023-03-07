@@ -16,11 +16,11 @@ function Error() {
                 <MouseParallax />
                 <article className="container-erro"> 
                   <h2 className="text-404">404</h2>   
-                    <div className='text-erro'>
-                        <p>Ué? Parece que você se perdeu...</p>
-                        <p>Volte para a página inicial!</p>
-                        <button><Link to="/">Inicio</Link></button>
-                    </div>
+                  <div className='text-erro'>
+                      <p className='text-erro-p'>Ué? Parece que você se perdeu...<br />
+                      Volte para a página inicial!</p>
+                      <button><Link to="/">Inicio</Link></button>
+                  </div>
                 </article>
               </section>	           
             </div>   

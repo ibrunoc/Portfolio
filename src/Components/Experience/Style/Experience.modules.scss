@@ -2,7 +2,7 @@
 
 .experience-zone{   
   padding-top: 80px;
-  background-color: var(--bg-color);   
+  background-color: var(--bgTwo-color);   
 }
 
 .experience-zone .container{
@@ -59,12 +59,33 @@
 
 .container-experience h1{
   color: var(--subtitle-color);
+  border: 1px solid var(--bg-color);
   font-size: 2rem;
   text-align: left;
   padding-left: 10px;
   position: relative;
+  z-index: 1;
 
   &:hover{ color: var(--red-color); }
+}
+
+.container-experience h1::before{
+  content: '';
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background-color: #06505e;
+  top: 67%;
+  left: 7px;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.data-experience{  
+  color: var(--body-color);
+  text-align: left;
+  padding-left: 10px;
+  position: relative;
 }
 
 .container-info-experience::before{  
@@ -107,14 +128,7 @@
   &:hover{ color: var(--red-color); }
 }
 
-.container-experience p{
-  color: var(--body-color);
-  font-size: 1rem;
-  text-align: left;
-  padding-left: 50px;
-}
-
-.container-experience p{
+.info-experience p{
   color: var(--body-color);
   font-size: 1rem;
   text-align: left;
@@ -172,6 +186,8 @@
     
   .experience h1{ text-align: center; }
 
+  .data-experience{ text-align: center; }
+
   .container-info-experience::before{ top: 40%; }
     
   .info-experience::after{
@@ -224,6 +240,9 @@
   .experience h2{ font-size: 1.2rem; }
   
   .experience p{ font-size: 0.8rem; }
+}
+@media (max-width: 330px) {
+.container-experience h1::before{ display: none; }
 }
 
 @media (max-width: 270px) {

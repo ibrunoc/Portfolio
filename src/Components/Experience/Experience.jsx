@@ -18,7 +18,10 @@ export function Experience() {
                         <div className='container-experience'>   
                             <div className='info-company'>       
                                 <img src={Ocupop} alt="OcuPop Oftalmologia"></img>
-                                <h1>OcuPop Oftalmologia</h1>
+                                <div>
+                                    <h1>OcuPop Oftalmologia</h1>
+                                    <p className='data-experience'>02/2023 - Presente</p>
+                                </div>
                             </div> 
 
                             <div className='info-experience'>
@@ -38,7 +41,8 @@ export function Experience() {
                         </div>                        
                     </article>                    
                 </section>                                
-            </main>   
+            </main>             
+            <div className='background-swish-down' />       
         </>
     );
 }

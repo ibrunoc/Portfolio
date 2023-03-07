@@ -1,9 +1,10 @@
 @import url(../../../reset.scss);
 
 .error-404 {
+  width: 100%;
   background-color: var(--bg-color);
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  align-items: center;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -21,14 +22,13 @@
 
 .text-404 {
   width: 100%;
-  min-width: 400px;
   font-size: 200px;
   font-weight: 700;
   color: var(--subtitle-color);
   display: flex !important;
   justify-content: center;
   align-items: center;
-  font-family: "Poppins";
+  font-family: "Gilroy-bold";
   z-index: 2;
 }
 
@@ -40,12 +40,12 @@
   justify-content: center; 
 }
 
-.text-erro p{
+.text-erro-p{
   color: var(--body-color);
   font-size: 18px;
   font-weight: bolder;
   letter-spacing: 0.6px;
-  font-family: "Lato";
+  font-family: "Gilroy-bold";
 }
 
 .text-erro button {
@@ -83,5 +83,8 @@
 @media (max-width: 350px) {  
   .text-404 { font-size: 120px; }
 
-  .text-erro p { width: 50%; }
+  .text-erro p { 
+    width: 80%; 
+    margin: auto;
+  }
 }

@@ -38,8 +38,9 @@ export function Skills() {
     };
 
     return (
-        <>
-            <main id='Skills' className="skills-zone">            
+        <>       
+            <div className='background-swish-top' />  
+            <main id='Skills' className="skills-zone">      
                 <section className="section-title">
                     <h2 className="title"><span>02.</span> Skills</h2>
                     <hr />
@@ -194,7 +195,7 @@ export function Skills() {
                     </article>
                     }      
                 </section>
-            </main>              
+            </main>                     
         </>
     );
 }  

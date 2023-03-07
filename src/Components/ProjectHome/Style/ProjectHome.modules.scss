@@ -1,11 +1,13 @@
 @import url(../../../reset.scss);
 
 .projects-home{
-  background-color: var(--bg-color);
+  background-color: var(--bgTwo-color);
   color: var(--body-color);
   width: 100%;     
-  padding-top: 120px;
-  margin: auto auto 80px auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  position: relative;
+  z-index: 3;
 }
 
 .section-title { padding-bottom: 10px !important; }
