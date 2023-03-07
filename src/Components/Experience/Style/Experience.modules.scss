@@ -243,6 +243,8 @@
 }
 @media (max-width: 330px) {
 .container-experience h1::before{ display: none; }
+
+.tags { padding-top: 55px; }
 }
 
 @media (max-width: 270px) {
