@@ -11,6 +11,8 @@
   width: 100%;
   max-width: 700px;
   margin: auto;
+  position: relative;
+  z-index: 1;    
 }
 
 .about-content { margin: 60px auto auto auto; }

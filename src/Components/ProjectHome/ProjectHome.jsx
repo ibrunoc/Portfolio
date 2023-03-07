@@ -81,7 +81,6 @@ export function ProjectHome() {
 
     return (
         <>    
-            <div className='background-swish-top-project' />  
             <div id="Project"> 
                 <main className="projects-home">
                     <section className="container">
@@ -539,8 +538,7 @@ export function ProjectHome() {
                         </div>                                    
                     </div>                                    
                 </Modal> 
-            </section>    
-            <div className='background-swish-down-project' />          
+            </section>         
         </>
     );
 }

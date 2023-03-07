@@ -54,7 +54,7 @@ export function Footer() {
                                 <li><a target="_blank" rel="noreferrer" href="https://github.com/ibrunoc/"><BsGithub className='github-footer'/></a></li>
                                 <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/bruno.costa.c/"><BsInstagram className='linkedin-footer' /></a></li>
                                 <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brunocostac/"><BsLinkedin className='linkedin-footer' /></a></li> 
-                                <li><a target="_blank" rel="noreferrer" href="https://www.behance.net/ibrunoc"><BsLinkedin className='linkedin-footer' /></a></li>
+                                <li><a target="_blank" rel="noreferrer" href="https://www.behance.net/ibrunoc"><BsBehance className='linkedin-footer' /></a></li>
                             </ul>
                         </aside>
                     </article>

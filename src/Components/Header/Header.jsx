@@ -74,12 +74,12 @@ export function Header() {
 						</li>
 						<li className="nav-item">
 							<Link activeClass="select-mobile" spy={true} to="About"><NavLink to="">Sobre</NavLink></Link>
-						</li>					
-						<li className="nav-item">
-							<Link activeClass="select-mobile" spy={true} to="Experience"><NavLink to="/">Experiência</NavLink></Link>
-						</li>					
+						</li>						
 						<li className="nav-item">
 							<Link activeClass="select-mobile" spy={true} to="Skills"><NavLink to="/">Skills</NavLink></Link>
+						</li>				
+						<li className="nav-item">
+							<Link activeClass="select-mobile" spy={true} to="Experience"><NavLink to="/">Experiência</NavLink></Link>
 						</li>
 						<li className="nav-item">
 							<Link activeClass="select-mobile" spy={true} to="Courses"><NavLink to="">Formação</NavLink></Link>

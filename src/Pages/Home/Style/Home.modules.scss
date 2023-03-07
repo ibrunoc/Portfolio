@@ -172,13 +172,14 @@
   width: 10%;
   position: fixed;
   bottom: 0;   
-  z-index: 999;
+  z-index: 9999;
   display: block;
 }
 
 .cover-social .cover-social-icon {  
   position: relative;
   margin-left: 20%;
+  z-index: 999;
 }
 
 .line-social{    
@@ -188,6 +189,7 @@
   display: block; 
   position: relative;
   margin-left: 25px;
+  z-index: 9999;
 }
 
 .github-cover, .linkedin-cover, .instagram-cover, .behance-cover{

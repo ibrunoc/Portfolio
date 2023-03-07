@@ -6,7 +6,7 @@ export function AboutMe() {
     return (
         <>
             <div id="About">
-                <main  className="about-zone" data-aos="fade-up">
+                <main className="about-zone" data-aos="fade-up">
                     <section className="container">
                         <article className="section-title">
                             <h2 className="title"><span>01.</span> Sobre mim</h2>
