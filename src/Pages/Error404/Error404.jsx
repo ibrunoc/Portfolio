@@ -8,6 +8,8 @@ import 'aos/dist/aos.css';
 import MouseParallax from '../../Common/Context/MouseParallax';
 
 function Error() {
+    document.title = 'Página não encontrada';
+    
     return (
       <>
         <div>              

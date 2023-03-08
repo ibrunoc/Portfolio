@@ -26,6 +26,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 
 function Courses() {   
+    document.title = 'Formação';
    
     const MicrolinsIco = () => ( <img className="icon-course" alt="Microlins" src={MicrolinsI} /> );
     const DankiIco = () => ( <img className='icon-course' alt='Danki Code' src={ DankiCodeI } /> );

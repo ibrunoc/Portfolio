@@ -12,11 +12,14 @@ import { Footer } from '../../Components/Footer/Footer';
 import { Scroll } from '../../Components/ScrollTop/Scroll';
 
 import { BsInstagram, BsGithub, BsLinkedin, BsArrowDown, BsBehance } from "react-icons/bs"; 
+import { SiLinktree } from "react-icons/si"; 
 
 import perfil  from './Images/perfil.webp';
 import backgroundCover  from './Images/backgroundCover.webp';
 
 export function Home() {
+    document.title = '<Bruno Costa C. />';
+    
     return (
         <>            
             <section>
@@ -38,7 +41,7 @@ export function Home() {
                                     <div className="professions-cover">           
                                         <Type />
                                     </div>                                            
-                                    <a className="cover-btn" without rel="noreferrer" target="_blank" href="https://drive.google.com/file/d/1pqFAqsvr1371CYWpVH2jEXGej3EFP3fB/view?usp=share_link">Baixar CV</a>
+                                    <a className="cover-btn" without rel="noreferrer" target="_blank" href="https://drive.google.com/file/d/1qDXIvjAJDFIMynW6_ncnJysIjLp8w730/view?usp=share_link">Baixar CV</a>
                                 </aside>           
                             </article>   
                             <figure className="profile-image">
@@ -57,6 +60,7 @@ export function Home() {
                                                 <li><a target="_blank" without rel="noreferrer" href="https://www.instagram.com/bruno.costa.c/"><BsInstagram className='instagram-cover' /></a></li>
                                                 <li><a target="_blank" without rel="noreferrer" href="https://www.linkedin.com/in/brunocostac/"><BsLinkedin className='linkedin-cover' /></a></li>
                                                 <li><a target="_blank" without rel="noreferrer" href="https://www.behance.net/ibrunoc"><BsBehance className='behance-cover' /></a></li>
+                                                <li><a target="_blank" without rel="noreferrer" href="https://linktr.ee/bruno.costa.c"><SiLinktree className='linktree-cover' /></a></li>
                                                 <li><div className='line-social' /></li>
                                             </ul> 
                                         </div>          
