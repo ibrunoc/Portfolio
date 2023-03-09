@@ -16,7 +16,6 @@ import { SiLinktree } from "react-icons/si";
 
 import perfil  from './Images/perfil.webp';
 import backgroundCover  from './Images/backgroundCover.webp';
-import { Service } from '../../Components/Service/Service';
 
 export function Home() {
     document.title = '<Bruno Costa C. />';
@@ -81,7 +80,6 @@ export function Home() {
                 <Experience />  
                 <CoursesHome /> 
                 <ProjectHome /> 
-                <Service />
                 <Curriculum />   
                 <Footer />     
                 <Scroll />
