@@ -58,9 +58,76 @@
   margin-left: 10px;
 }
 
+.service-zone{ 
+  max-width: 1200px;
+  margin: auto;   
+}
+
+.service-info{
+  background-color: transparent;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;  
+  flex-direction: row;
+}
+
+.service-icon p{
+  width: 90%;
+  margin: auto;
+  color: var(--body-color);
+}
+
+.mySwiper{
+  max-width: 80% !important;
+  height: auto !important;
+  padding: 0px 20px 20px 20px !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction { bottom: var(--swiper-pagination-bottom, 0px) !important; }
+
+.swiper-pagination-bullet { background: var(--red-color) !important; }
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next { left: var(--swiper-navigation-sides-offset, 0px) !important;}
+.swiper-button-next, .swiper-rtl .swiper-button-prev { right: var(--swiper-navigation-sides-offset, 0px) !important;}
+
+.iconService {
+  font-size: 60px;
+  color: var(--subtitle-color);
+  margin-top: 10px; 
+
+  &:hover { color: var(--subtitleInvert-color); }
+}
+
+
+.service .service-title{
+  width: 95%;
+  margin: 15px auto;
+  font-size: 22px;
+  font-family: "Lato";
+  font-weight: 600;
+  color: var(--subtitle-color);
+  user-select: none;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; 
+
+  &:hover { color: var(--subtitleInvert-color); }
+}
+
 /*===========================
        RESPONSIVE CSS 
 ===========================*/
+
+@media screen and (max-width: 863px) { 
+  .service{     
+    margin-top: 20px;
+    padding: 25px 0px; 
+    height: 250px;
+  }
+}
 
 @media (max-width: 767px) {
   .about-content .about { 
@@ -81,4 +148,14 @@
     width: 100%;
     float: left;
   }
+
+  .service{     
+    margin-top: 20px;
+    padding: 25px 0px; 
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 563px) { 
+  .mySwiper{ padding: 0px 0px 20px 0px !important; }
 }

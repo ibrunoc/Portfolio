@@ -48,14 +48,14 @@ export function Skills() {
 
                 <section className="skills">
                     <button className="buttonSkills" onClick={toggleVisibilityFront}>   
-                        <aside className={`hamburgerFront ${isActiveFront ? "active" : ""}`} onClick={toggleVisibilityFront}>                           					
+                        <aside className={`hamburger ${isActiveFront ? "active" : ""}`} onClick={toggleVisibilityFront}>                           					
                             <span className="barSkills"></span>
                             <span className="barSkills"></span>
                         </aside>   
                     <h1>Front-End</h1>
                     </button>  
                     {isVisibleFront &&
-                    <article id="frontEnd" className='frontEnd'>                        
+                    <article className='container-icon-skills'>                        
                         <div className='icon-skills'>
                             <AiOutlineHtml5 className='icon' size={60} />
                             <h2>HTML</h2>
@@ -98,14 +98,14 @@ export function Skills() {
 
                 <section className="skills">
                     <button className="buttonSkills" onClick={toggleVisibilityBack}>   
-                        <aside className={`hamburgerBack ${isActiveBack ? "active" : ""}`} onClick={toggleVisibilityBack}>                           	                           					
+                        <aside className={`hamburger ${isActiveBack ? "active" : ""}`} onClick={toggleVisibilityBack}>                           	                           					
                             <span className="barSkills"></span>
                             <span className="barSkills"></span>
                         </aside>
                     <h1>Back-End</h1>
                     </button> 
                     {isVisibleBack &&
-                    <article id="backEnd" className='backEnd'>
+                    <article className='container-icon-skills'>
                         <div className='icon-skills'>
                             <SiPhp className='icon' size={60} />
                             <h2>PHP</h2>
@@ -144,14 +144,14 @@ export function Skills() {
 
                 <section className="skills">                        
                     <button className="buttonSkills"onClick={toggleVisibilityO}>   
-                        <aside className={`hamburgerO ${isActiveO ? "active" : ""}`} onClick={toggleVisibilityO}>  
+                        <aside className={`hamburger ${isActiveO ? "active" : ""}`} onClick={toggleVisibilityO}>  
                             <span className="barSkills"></span>
                             <span className="barSkills"></span>
                         </aside>                                
                     <h1>Designer, Animação, Desenho e Hardware</h1>	                                  
                     </button> 
                     {isVisibleO &&   
-                    <article id="outros" className='others'>            
+                    <article className='container-icon-skills'>            
                         <div className='icon-skills'>
                             <BsGithub className='icon' size={60} />
                             <h2>GitHub</h2>

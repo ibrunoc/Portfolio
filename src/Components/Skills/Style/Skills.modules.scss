@@ -29,8 +29,8 @@
   .buttonSkills{
     position: relative;
     background: linear-gradient(0deg, rgba(78,104,249,1) 0%, rgba(120,215,221,1) 100%);
-    width: 55%;
-    max-width: 800px;
+    width: 50%;
+    max-width: 700px;
     height: auto;
     padding-bottom: 20px;
     margin: auto;    
@@ -57,7 +57,7 @@
     font-weight: 600;
   }
 
-  .hamburgerFront, .hamburgerBack, .hamburgerO {
+  .hamburger {
     width: 10%;
     height: 100% !important;   
     position: absolute;
@@ -69,8 +69,6 @@
     cursor: pointer;
     color: var(--body-color);
   }
-
-  .hamburgerO{ top: 95%; }
   
   .barSkills{  
     display: block;
@@ -82,34 +80,24 @@
     background-color: var(--bg-color);
   }
 
-  .hamburgerFront .barSkills:nth-child(1),  
-  .hamburgerBack .barSkills:nth-child(1),
-  .hamburgerO .barSkills:nth-child(1){ transform: translateX(0px) rotate(0deg); }
+  .hamburger .barSkills:nth-child(1){ transform: translateX(0px) rotate(0deg); }
 
-  .hamburgerFront .barSkills:nth-child(2),
-  .hamburgerBack .barSkills:nth-child(2),  
-  .hamburgerO .barSkills:nth-child(2){ transform: translateY(-10px) rotate(90deg); }
+  .hamburger .barSkills:nth-child(2){ transform: translateY(-10px) rotate(90deg); }
 
-  .hamburgerFront.active .barSkills:nth-child(1),
-  .hamburgerBack.active .barSkills:nth-child(1),
-  .hamburgerO.active .barSkills:nth-child(1){  transform: translateY(0px) rotate(45deg); }
+  .hamburger.active .barSkills:nth-child(1){  transform: translateY(0px) rotate(45deg); }
 
-  .hamburgerFront.active .barSkills:nth-child(2),
-  .hamburgerBack.active .barSkills:nth-child(2),
-  .hamburgerO.active .barSkills:nth-child(2){ transform: translateY(-10px) rotate(-45deg); }
+  .hamburger.active .barSkills:nth-child(2){ transform: translateY(-10px) rotate(-45deg); }
 
-  .frontEnd, .backEnd, .others{ 
-    width: 55%;
+  .container-icon-skills{ 
+    width: 49%;
     background-color: #020b16;
     height: auto;
     margin: auto;
-    max-width: 800px;
+    max-width: 690px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  .others{ padding-bottom: 0px; }
 
   .icon{ 
     color: var(--subtitle-color);
@@ -137,14 +125,14 @@
   }  
 }
 
-  .icon h2{
-    font-size: 1rem;
-    margin: 10px auto auto auto;
-    color: var(--body-color);
-    
-    &:hover { color: var(--red-color); }
-  }
+.icon h2{
+  font-size: 1rem;
+  margin: 10px auto auto auto;
+  color: var(--body-color);
   
+  &:hover { color: var(--red-color); }
+}
+
 /*===========================
        RESPONSIVE CSS 
 ===========================*/
@@ -152,28 +140,16 @@
 @media screen and (max-width: 1068px) { .icon{ display: block; } }
 
 @media screen and (max-width: 768px) {
-  .service{     
-    margin-top: 20px;
-    padding: 25px 0px; 
-    height: 250px;
-  }
-
-  .service-container {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin: auto;
-  }  
-
   .skills{ width: 90%; }
 
   .buttonSkills { width: 90%;}
 
-  .frontEnd, .backEnd, .others{ width: 90%;}  
+  .container-icon-skills{ width: 88%;}  
 }
 
 @media screen and (max-width: 563px) { 
   .icon-skills{ width: 30%; } 
+
   .icon{ margin: auto; } 
 }
 

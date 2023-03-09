@@ -66,7 +66,6 @@ export function HeaderCourse() {
 							<article className={`hamburger ${isActive ? "active" : "hamburger"}`}>
 								<span className="bar"></span>
 								<span className="bar"></span>
-								<span className="bar"></span>
 							</article>     
 						</button>                                       
 					</nav>
