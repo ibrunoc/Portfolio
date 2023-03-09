@@ -1,7 +1,7 @@
 import './Style/Loading.modules.scss';
 import React from 'react';
 
-import { MutatingDots  } from 'react-loader-spinner';
+import { ThreeCircles } from 'react-loader-spinner';
 
 export default function Loading() {
 
@@ -17,7 +17,7 @@ export default function Loading() {
 	return(
 		<div style={LoadingContainer}>
 			<section className='loadingContainer'>			
-				<MutatingDots color="#78D7DD" secondaryColor='#fc4545' />
+				<ThreeCircles color="#78D7DD" />
 			</section>
 		</div>	
 	);
